@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OmegaMC — уютный Minecraft сервер 1.21.6+</title>
+    <meta name="description" content="OmegaMC — ванильный Minecraft сервер без доната и читов. Играем честно и с удовольствием.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dark text-light">
+
+<!-- Навигация -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark-90 fixed-top py-3">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <i class="fas fa-cube me-2 text-primary"></i>
+            <span class="fw-bold">OmegaMC</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-2"><a class="nav-link" href="#features">Особенности</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="#join">Как подключиться</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="#reviews">Отзывы</a></li>
+                <li class="nav-item mx-2"><a class="nav-link btn btn-sm btn-outline-primary px-3" href="telegram.org" target="_blank">Telegram</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero-section py-5 text-center">
+    <div class="container py-5 mt-5">
+        <div class="hero-glow"></div>
+        <div class="position-relative z-1">
+            <h1 class="display-3 fw-bold mb-3">OmegaMC</h1>
+            <div class="d-flex justify-content-center mb-4">
+                <div class="version-badge">1.21.6+</div>
+            </div>
+            <p class="lead fs-2 mb-4">Ламповый Minecraft сервер без доната и читов</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+                <button class="btn btn-primary btn-lg px-4 py-2 fw-bold" onclick="copyIP()">
+                    <i class="fas fa-copy me-2"></i>Скопировать IP
+                </button>
+                <a href="telegram.org" class="btn btn-outline-light btn-lg px-4 py-2" target="_blank">
+                    <i class="fab fa-telegram me-2"></i>Наш Telegram
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features -->
+<section id="features" class="py-5 position-relative">
+    <div class="features-pattern"></div>
+    <div class="container py-5 position-relative z-1">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold mb-3">Почему выбирают OmegaMC?</h2>
+            <p class="text-muted mx-auto" style="max-width: 700px;">Наш сервер создан для тех, кто ценит честную игру и уютную атмосферу без доната и привилегий</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature-card p-4 h-100">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="h5 fw-bold">Уютная атмосфера</h3>
+                    <p class="mb-0">Дружелюбное сообщество и комфортная среда для игры</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card p-4 h-100">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="h5 fw-bold">Честная игра</h3>
+                    <p class="mb-0">Никаких читов, доната и платных преимуществ</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card p-4 h-100">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3 class="h5 fw-bold">Анти-грифер защита</h3>
+                    <p class="mb-0">Ваши постройки в безопасности от вандалов</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card p-4 h-100">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="h5 fw-bold">Активное сообщество</h3>
+                    <p class="mb-0">Всегда найдётся с кем поиграть и пообщаться</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card p-4 h-100">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="h5 fw-bold">Регулярные ивенты</h3>
+                    <p class="mb-0">PvP турниры, стройбаттлы и другие события</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card p-4 h-100">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 class="h5 fw-bold">Стабильность</h3>
+                    <p class="mb-0">Высокий аптайм и регулярные обновления</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How to join -->
+<section id="join" class="py-5 position-relative">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="join-card p-4 p-lg-5">
+                    <h2 class="display-5 fw-bold mb-4">Как подключиться?</h2>
+                    <ol class="steps">
+                        <li class="step-item mb-4">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3 class="h5 fw-bold">Запусти Minecraft</h3>
+                                <p class="mb-0">Версия 1.21.6 или новее</p>
+                            </div>
+                        </li>
+                        <li class="step-item mb-4">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3 class="h5 fw-bold">Открой "Сетевую игру"</h3>
+                                <p class="mb-0">В главном меню игры</p>
+                            </div>
+                        </li>
+                        <li class="step-item mb-4">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3 class="h5 fw-bold">Добавь сервер</h3>
+                                <p class="mb-0">IP-адрес: <span class="server-ip">omega.mclan.ru</span></p>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3 class="h5 fw-bold">Наслаждайся игрой!</h3>
+                                <p class="mb-0">Присоединяйся к нашему сообществу</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="screenshot-placeholder">
+                    <div class="mc-window">
+                        <div class="mc-titlebar">Minecraft 1.21.6</div>
+                        <div class="mc-content">
+                            <div class="mc-server-entry">
+                                <div class="mc-icon">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <div class="mc-server-info">
+                                    <div class="mc-server-name">OmegaMC</div>
+                                    <div class="mc-server-ip">omega.mclan.ru</div>
+                                </div>
+                                <div class="mc-players">24/50</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reviews -->
+<section id="reviews" class="py-5">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold mb-3">Что говорят игроки</h2>
+            <p class="text-muted">Присоединяйся к нашему дружелюбному сообществу</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="review-card p-4 h-100">
+                    <div class="review-header mb-3">
+                        <div class="review-avatar bg-primary">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <div class="review-author">Владислав</div>
+                            <div class="review-date">2 дня назад</div>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-0">"Очень ламповый сервер, давно такого не встречал. Администрация адекватная, читеров нет, играть одно удовольствие!"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="review-card p-4 h-100">
+                    <div class="review-header mb-3">
+                        <div class="review-avatar bg-primary">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <div class="review-author">Анастасия</div>
+                            <div class="review-date">Неделю назад</div>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="mb-0">"Никто не рушит постройки, комьюнити классное! Наконец-то нашла сервер, где можно спокойно строить и развиваться."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="review-card p-4 h-100">
+                    <div class="review-header mb-3">
+                        <div class="review-avatar bg-primary">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <div class="review-author">Максим</div>
+                            <div class="review-date">3 дня назад</div>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-0">"Идеально для вечерних посиделок в Minecraft. PvP арена просто огонь, а ивенты проводят регулярно. Рекомендую!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark-80">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-cube fa-2x text-primary me-3"></i>
+                    <div>
+                        <h3 class="h5 fw-bold mb-0">OmegaMC</h3>
+                        <p class="mb-0">Ламповый Minecraft сервер</p>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <button class="btn btn-outline-light me-2" onclick="copyIP()">
+                        <i class="fas fa-copy me-1"></i>Скопировать IP
+                    </button>
+                    <a href="https://telegram.org" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-telegram me-1"></i>Telegram
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-md-end">
+                    <div class="footer-links">
+                        <h4 class="h6 fw-bold mb-3">Ссылки</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#features" class="text-light">Особенности</a></li>
+                            <li class="mb-2"><a href="#join" class="text-light">Как подключиться</a></li>
+                            <li class="mb-2"><a href="#reviews" class="text-light">Отзывы</a></li>
+                            <li><a href="https://telegra.ph/Pravila-servera-OmegaMC-07-02" target="_blank" class="text-light">Правила сервера</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4 bg-gray-700">
+        <div class="text-center text-md-start">
+            <p class="mb-0">OmegaMC © 2025 | Создано с <i class="fas fa-heart text-danger mx-1"></i> для игроков</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
